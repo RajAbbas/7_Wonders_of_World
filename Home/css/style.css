@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+a{
+    color: black;
+    text-decoration: none;
+}   
+
+p{
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    background-color: #1a1a1aef;
+    
+}
+
+header{
+    height: 9vh;
+
+
+    display: flex;
+    align-items: center;
+
+   position: fixed;
+   z-index: 111111;
+   top: 0;
+
+}
+
+.logo img{
+    height: 50px;
+    }
+    .logo{
+        font-size: 30px ;
+        color: white;
+        font-family: 'Roboto Slab', serif;
+        letter-spacing: -3px;
+        font-weight:500;
+    }
+
+
+#nav-btn{
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.navbaar{
+    position: absolute  ;
+    top: 0vh;
+    left: 0;
+    /* background-color: rgba(255, 255, 255, 0.726); */
+    height: 100vh;
+    width: 0%;
+    box-shadow:  rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 80px 0px;
+    transition:all .5s ease-in-out;
+    /* backdrop-filter: blur(0.1em); */
+
+    background-color: #1a1a1a;
+}
+.navbaar a{
+    color: rgba(255, 255, 255, 0.818)
+    
+    
+    ;
+    font-size: 1.2em;
+    margin-left: -30px;
+}
+.navbaar i{
+    color: rgba(255, 255, 255, 0.818);
+    padding: 10px;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.818) ;
+}
+
+.nav-back{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.315),rgba(0, 0, 0, 0.381));
+    position: fixed;
+    width: 100%;
+    display: none;
+    z-index: 11111;
+    transition:all .5s ease-in-out;
+}
+
+/* linear-gradient(to bottom ,transparent,#1a1a1a21,#1a1a1a), */
+#Home{
+height: 90vh;
+background-image: url(/Home/homeutilis/-min.jpg);
+background-position: center;
+background-size: cover  ;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+margin-bottom: 10vh;
+}
+.home-text {
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+.home-text h1{
+    font-size: 2.5em;
+    text-shadow: 4px 4px 3px rgba(255, 255, 255, 0.37);
+    text-align: center;
+}
+ 
+
+
+
+
+.nav-colored{
+    background-color: white;
+}
+.nav-transparent{
+    background-color: transparent;
+}
+
+
+@media(max-width:576px){
+    .navbaar{
+        width: 50%;
+        font-size: 70%
+    }
+    .home-text{
+        font-size: 80%;
+    }
+}

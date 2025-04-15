@@ -1,0 +1,172 @@
+.info-banner{
+    width: 100%;
+    height: auto;
+    min-height: 80vh;
+    max-height: 90vh;
+    background-image: url('/Information/img/7-Wonders-Of-The-World-\(2\).jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+p{
+    font-family: sans-serif;
+}
+.info-head-1 h3{
+    color: #ffce3e;
+    font-size: 1.3em;
+}
+.info-head-1 h1{
+    font-size: 1.8em;
+}
+.info-head-1 p{
+    font-size: .9em;
+}
+.info-nav{
+    overflow: hidden;
+    height: 40px;
+    position: sticky;
+    top: 8vh;
+    background-color: white;
+    box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.486);
+    z-index: 111;
+}
+
+.info-nav ul{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    justify-content:space-between;
+}
+.info-nav ul li{
+    border-right: .1px solid rgba(128, 128, 128, 0.473);
+    text-align: center;
+    width: 14.2857142857%;
+    list-style: none;
+  
+}
+
+.info-nav ul li a{
+    color:rgba(128, 128, 128, 0.692);
+    width: 100%;
+    transition: all .3s ease-in-out;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-nav ul li a:hover{
+    background-color: rgba(0, 0, 255, 0.76);
+    color: white;
+}
+.info-box{
+    max-height: max-content;
+    font-size: 100%;
+    overflow: hidden;
+    border: none;
+   margin: 10px;
+}
+.info-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 2px 0px 3px;
+    overflow: hidden;
+    color: white;
+    padding: 10px;
+}
+.info-box-img{
+    
+    object-fit: cover;
+    height: auto;
+    margin:20px
+    ;
+
+}
+
+.info-box-img:hover{
+filter: grayscale(0%);
+}
+
+.info-box h1{
+    font-size: 2.5em;
+}
+.info-box h2{
+    font-size: 1.3em;
+    color: grey;
+}
+
+.info-box p,.info-table td{
+    font-size: 1.2em;
+}
+
+.info-box i{
+    font-size: 1.5em;
+    margin: 10px 10px 0px 10px ;
+    color: grey;
+}
+
+
+
+.info-table{
+    width: 50%;
+   border: 1px solid rgba(128, 128, 128, 0.61); 
+}
+.info-table th{
+    background-color: rgba(128, 128, 128, 0.61);
+    color: black;
+    font-size: 1.1em;
+    padding: 7px;
+}
+
+.info-table td{
+    text-align: left;
+    padding: 0px 5px;
+}
+
+
+.info-table tr{
+    border: 1px solid grey;
+}
+
+
+.info-text img{
+    object-fit: cover;
+    height: auto;
+}
+
+@media(max-width:576px){
+    .info-box-img{
+        width: 100%;
+
+    }
+    .info-head-1{
+        font-size: 80%;
+        text-align: center;
+    }
+
+
+    .info-text{
+        font-size: 80%;
+    }
+}
+
+@media(max-width:992px){
+    .info-nav a{
+       width: 200px;
+    }
+}
+
+
+@media(max-width:768px){
+    .info-nav ul{
+        width: 200%;
+        /* overflow-x: scroll; */
+    }
+    .info-nav{
+        overflow-x: scroll;
+    }
+}

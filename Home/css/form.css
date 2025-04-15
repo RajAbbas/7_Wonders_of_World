@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/*FeedBack Form Starts*/
+#ContactUs{
+  color: white;
+  margin-bottom: 20vh;
+}
+#ContactUs>h1{
+ border-bottom: 2px solid #f09433;
+}
+#ContactUs>div{
+  border: 2px solid white;
+  min-height: 80vh;
+  max-height: 200vh; 
+  overflow: hidden;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.feedbackform{
+  background-color: white;
+  max-height: 120vh;
+  overflow: hidden;
+}
+
+.input-text{
+    border: none;
+    border-bottom: 1.8px solid  rgba(128, 128, 128, 0.452);
+    transition: border-bottom .5s ease-in-out;
+}
+.input-text:focus{
+  outline: none;
+  border-bottom: 1.8px solid black ;
+  }
+
+.input-text:focus ~ label,.input-text:valid ~ label{
+  color: black;
+  transform: translateY(0PX);
+  
+}
+
+
+.active-error{
+  box-shadow: 0px 0px 4px 2px rgba(255, 0, 0, 0.418);
+
+}
+.active-error:focus{
+  background-color: white;
+}
+
+.formerror{
+  color:red;
+}
+
+
+label{
+  color: rgba(128, 128, 128, 0.562);
+  text-transform: capitalize;
+  font-weight: 500;
+  transform: translateY(24px);
+  pointer-events: none;
+  transition: .3s ease-in-out all;
+}
+
+
+/*FeedBack Form Ends*/
+
+
+input[type='submit']{
+  background-color: #f09533c5;
+  border: none;
+}
+  
+.contact-info i{
+    font-size: 1.2em;
+    margin-bottom: 7px;
+  }
+  .contact-info h4{
+    font-size: 1.2em;
+  }
+  .contact-info p{
+    font-size: 0.9em;
+  }
+
+
+
+
+.fa {
+  
+  padding: 6px ;
+  margin: 0px 10px 0px 0px;
+  border-radius: 100px;
+
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  color: white;
+}
+
+
+
+@media(max-width:768px){
+  .feedback-form{
+    height: 160vh;
+  }
+  }
+
+@media(max-width:576px){
+  label{
+    text-align: left;
+  }
+
+#ContactUs{
+  text-align: center;
+}
+
+
+  .contact-info-box{
+    font-size: 70%;
+    width: 33%;
+  }
+  } 
+
+  @media(max-width:375px){
+    .contact-info{
+      font-size: 80%;
+    }
+  }
